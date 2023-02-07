@@ -1,27 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 import shortid from 'shortid';
 
-const initialContacts = [
-  {
-    id: '1',
-    name: 'Contact 1',
-    number: '555-22-33',
-  },
-  {
-    id: '2',
-    name: 'Contact 2',
-    number: '555-22-33',
-  },
-  {
-    id: '3',
-    name: 'Contact 3',
-    number: '555-22-33',
-  },
-];
-
 export const contactsSlicer = createSlice({
   name: 'contacts',
-  initialState: [...initialContacts],
+  initialState: [],
   reducers: {
     addContactRedux(state, action) {
       const contact = {
